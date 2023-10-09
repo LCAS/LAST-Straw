@@ -1,1 +1,1 @@
-Project Page built using the template at github.com/eliahuhorwitz/Academic-project-page-template
+Project Page built using the [template](github.com/eliahuhorwitz/Academic-project-page-template) by [eliahuhorwitz](github.com/eliahuhorwitz).
