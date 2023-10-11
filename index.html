@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">4D Berry</h1>
-            <h3 class="title is-1 publication-title">a spatio-temporal data set of strawberry plants</h3>
+            <h3>a spatio-temporal data set of strawberry plants</h3>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -134,7 +134,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        A dataset of 84 coloured point clouds of strawberry plants, 12 of which are annotated with class and instance labels. 
+        Data preview: point clouds with original textures and instance annotations. 
       </h2>
     </div>
   </div>
@@ -157,10 +157,10 @@
         <h3 class="title is-3">Methodology</h3>
         <div class="content has-text-justified">
           <p>
-            The scans were recorded using the <a href="https://www.einscan.com/handheld-3d-scanner/einscan-pro-2x-2020/">Shining 3D Einscan Pro 2x </a> handheld scanner, 
-            equipped with the <a href="https://www.einscan.com/handheld-3d-scanner/color-pack/">'Color Pack'</a> 'Color Pack' add-on. 
+            The scans were recorded using the <a href="https://www.einscan.com/handheld-3d-scanner/einscan-pro-2x-2020/" target="_blank">Shining 3D Einscan Pro 2x </a> handheld scanner, 
+            equipped with the <a href="https://www.einscan.com/handheld-3d-scanner/color-pack/" target="_blank">'Color Pack'</a> 'Color Pack' add-on. 
             The scanner operates based on structured-light projections, so while the plants were regularly housed under polytunnels 
-            at the University of Lincoln <a href="https://www.lincoln.ac.uk/liat/riseholmecampus/">Riseholme campus farm</a>, the plants were carefully 
+            at the University of Lincoln <a href="https://www.lincoln.ac.uk/liat/riseholmecampus/" target="_blank">Riseholme campus farm</a>, the plants were carefully 
             moved into a controlled scanning environment for each data collection. The scanning chamber was set up to provide low and diffuse indirect light, 
             optimizing conditions for data capture. The scanner was calibrated before each use.
             </p>
@@ -171,23 +171,25 @@
             Two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class.
             Please note that the instance labels are not temporally consistent and not ordered by emergence date of each organ. 
             Classes are: 
-            1. leaf or leaflet
-            2. stem (incl. pertiole, peduncle, pedicel, and stolon) 
-            3. berry
-            4. flower
-            5. crown
-            6. background (incl. soil, grow bags, neighbouring plants, and any other objects captured in the background)
-            7. other (any unidentifiable structure within the plant, which may include newly emerging shoots)
-            8. the scanning table
+            <ol>
+              <li>leaf or leaflet</li>
+              <li>stem (incl. petiole, peduncle, pedicel, and stolon)</li>
+              <li>berry</li>
+              <li>flower</li>
+              <li>crown</li>
+              <li>background (incl. soil, grow bags, neighboring plants, and any other objects captured in the background)</li>
+              <li>other (any unidentifiable structure within the plant, which may include newly emerging shoots)</li>
+              <li>the scanning table</li>
+            </ol>
             </p>
         </div>
 
         <h3 class="title is-3">Data format and ressources</h3>
         <div class="content has-text-justified">
           <p>
-            We provide each scan as an .xyz text file with 8 columns per points (X,Y,Z,R,G,B,class,instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
-            Files are named by their plant variety, id, and capture date in year-month-day format, e.g. katrina2_20220729.xyz
-            We recommend using <a href="https://www.danielgm.net/cc/">CloudCompare</a> to inspect the data. 
+            We provide each scan as an .xyz text file with 8 columns per points (X, Y, Z, R, G, B, class, instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
+            Files are named by their plant variety, id, and capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
+            We recommend using <a href="https://www.danielgm.net/cc/" target="_blank">CloudCompare</a> to inspect the data. 
             Make sure to switch these two drop-down menus in the Properties window to see all three visualisations: original colour, classes, and instances
             [image]
             We also provide sample code to open the files in Python, optionally using Open3D or numpy.
@@ -299,7 +301,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -309,17 +311,17 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
