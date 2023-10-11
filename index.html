@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>4DBerry</title>
+  <link rel="icon" type="image/x-icon" href="static/images/lcas_logo.webp">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,27 +52,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">4D Berry - a spatio-temporal data set of strawberry plants</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="karoline.heiwolt.de" target="_blank">Karoline Heiwolt</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://staff.lincoln.ac.uk/13ef189a-a2cc-43f0-8cec-fa55b4435cd2" target="_blank">Katherine M.F. James</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://staff.lincoln.ac.uk/gcielniak" target="_blank">Grzegorz Cielniak</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Lincoln Centre for Autonomous Systems<br>University of Lincoln, UK</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -80,22 +80,22 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Data set download link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://lcas.lincoln.ac.uk/wp/research/data-sets-software/" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Download (placeholder)</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/KarolineH/dacu3D" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,7 +105,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +113,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -129,33 +129,39 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/teaser.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        A spatio-temporal dataset of point clouds of strawberry plants, including class and instance annotations. 
       </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
-<!-- Paper abstract -->
+<!-- Text block -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h3 class="title is-3">The data set</h3>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). 3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. A total of 84 point clouds are provided with an average of ... points per scan. Of these, 12 are labelled with temporally consistent labels for each point in the clouds.
           </p>
+        </div>
+        <h3 class="title is-3">Method</h3>
+        <div class="content has-text-justified">
+          <p>
+            The scans were recorded using the Shining 3D Einscan Pro 2x handheld scanner, equipped with the 'Color Pack' add-on. The scanner operates based on structured-light projections, so while the plants were regularly housed under polytunnels at the University of Lincoln Riseholme campus farm, the plants were carefully moved into a controlled scanning environment for each data collection. The scanning chamber was set up to provide low and diffuse indirect light, optimizing conditions for data capture. The scanner was calibrated before each use.
+            </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End text block-->
 
 
 <!-- Image carousel -->
@@ -253,9 +259,6 @@
   </div>
 </section>
 <!-- End video carousel -->
-
-
-
 
 
 
