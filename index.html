@@ -57,7 +57,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="karoline.heiwolt.de" target="_blank">Karoline Heiwolt</a><sup>*</sup>,</span>
+                <a href="https://karo.super.site/" target="_blank">Karoline Heiwolt</a><sup>*</sup>,</span>
                 <span class="author-block">
                   <a href="https://staff.lincoln.ac.uk/13ef189a-a2cc-43f0-8cec-fa55b4435cd2" target="_blank">Katherine M.F. James</a><sup>*</sup>,</span>
                   <span class="author-block">
@@ -133,9 +133,8 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Data preview: point clouds with original textures and instance annotations. 
-      </h2>
-    </div>
+        Data preview: Example point cloud, alternating between original textures and instance annotations.
+      </h2>div>
   </div>
 </section>
 <!-- End teaser video -->
@@ -150,8 +149,8 @@
         <h3 class="title is-3">The data set</h3>
         <div class="content has-text-justified">
           <p>
-            This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). 
-            3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. A total of 84 point clouds are provided with an average of ... points per scan. 
+            This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). <br>
+            3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. <br> A total of 84 point clouds are provided with an average of ... points per scan. 
             Of these, 12 are labelled with temporally consistent labels for each point in the clouds.
           </p>
         </div>
@@ -164,6 +163,13 @@
             at the University of Lincoln <a href="https://www.lincoln.ac.uk/liat/riseholmecampus/" target="_blank">Riseholme campus farm</a>, the plants were carefully 
             moved into a controlled scanning environment for each data collection. The scanning chamber was set up to provide low and diffuse indirect light, 
             optimizing conditions for data capture. The scanner was calibrated before each use.
+            </p>
+        </div>
+        <h3 class="title is-3">Data structure and file format</h3>
+        <div class="content has-text-justified">
+          <p>
+            We provide each scan as an .xyz text file with up to 8 columns per points (X, Y, Z, R, G, B, class, instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
+            Files are named by their plant variety, id, and capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
             </p>
         </div>
         <h3 class="title is-3">Annotations</h3>
@@ -184,12 +190,9 @@
             </ol>
             </p>
         </div>
-
-        <h3 class="title is-3">Data format and ressources</h3>
+        <h3 class="title is-3">Code and ressources</h3>
         <div class="content has-text-justified">
           <p>
-            We provide each scan as an .xyz text file with 8 columns per points (X, Y, Z, R, G, B, class, instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
-            Files are named by their plant variety, id, and capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
             We recommend using <a href="https://www.danielgm.net/cc/" target="_blank">CloudCompare</a> to inspect the data. 
             Make sure to switch these two drop-down menus in the Properties window to see all three visualisations: original colour, classes, and instances
             [image]
