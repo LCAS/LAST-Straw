@@ -101,9 +101,20 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Sample Pyhton Code</span>
+                    <span>Sample Python Code</span>
                   </a>
                 </span>
+
+                <!-- Email link -->
+                <span class="link-block">
+                  <a href="mailto:gcielniak@lincoln.ac.uk" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Contact us</span>
+                </a>
+              </span>
 
                 <!-- ArXiv abstract Link -->
                 <!-- <span class="link-block">
@@ -145,7 +156,7 @@
       <img src="static/images/katrina_over_time_full.png">
     </figure> 
     <h2 class="subtitle has-text-centered">
-      Data preview: Example time series of point clouds with original texture (top), class annotations (middle), and leaf instances (bottom).
+      Data preview: Example time series of point clouds with original texture (top), <br> class annotations (middle), <br> and leaf instances (bottom).
     </h2>
   </div>
 </section>
@@ -162,7 +173,7 @@
           <p>
             This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). <br>
             3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. <br> A total of 84 point clouds are provided with an average of ... points per scan. 
-            Of these, 12 are labelled with temporally consistent labels for each point in the clouds.
+            Of these, 12 are labelled with class and temporally consistent instance labels for each point in the clouds.
           </p>
         </div>
         <h3 class="title is-3">Methodology</h3>
@@ -180,13 +191,13 @@
         <div class="content has-text-justified">
           <p>
             We provide each scan as an .xyz text file with up to 8 columns per points (X, Y, Z, R, G, B, class, instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
-            Files are named by their plant variety, id, and capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
+            Files are named by their plant variety and ID, followed by the capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
             </p>
         </div>
         <h3 class="title is-3">Annotations</h3>
         <div class="content has-text-justified">
           <p>
-            Two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class.
+            Where available, two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class.
             Please note that the instance labels are not temporally consistent and not ordered by emergence date of each organ. 
             Classes are: 
             <ol>
@@ -204,10 +215,10 @@
         <h3 class="title is-3">Code and ressources</h3>
         <div class="content has-text-justified">
           <p>
-            We provide a small python code sample <a href="https://github.com/KarolineH/projectpage/blob/master/python/data_io.py" target="_blank">here</a>.<br> for loading the data set, optionally using Open3D or Numpy.
+            We provide a small python code sample <a href="https://github.com/KarolineH/projectpage/blob/master/python/data_io.py" target="_blank">here</a> for loading the data set, optionally using Open3D or Numpy.
             We recommend using <a href="https://www.danielgm.net/cc/" target="_blank">CloudCompare</a> to inspect the data. 
             <figure>
-              <img src="static/images/cc_visualise.png" width="300">
+              <img src="static/images/cc_visualise.png" width="500">
               <figcaption>Make sure to flick through these two drop-down menus in the Properties window to display the labels where available. You can display original colour, class labels, and instance labels.</figcaption>
             </figure>
             </p>
@@ -226,6 +237,11 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+
+            Note: This website is a living document, and we continuously update it with the latest information related to our research. If you have any questions or feedback, please don't hesitate to contact us.
+            Thank you for your interest in our research!
+
+            This work was supported by...
           </p>
 
         </div>
