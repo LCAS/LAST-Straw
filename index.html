@@ -85,12 +85,12 @@
 
                     <!-- Data set download link -->
                     <span class="link-block">
-                      <a href="https://lcas.lincoln.ac.uk/wp/research/data-sets-software/" target="_blank"
+                      <a href="https://lcas.lincoln.ac.uk/nextcloud/index.php/s/omQY9ciP3Wr43GH" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-paperclip"></i>
                       </span>
-                      <span>Download (placeholder)</span>
+                      <span>Download</span>
                     </a>
                   </span>
 
@@ -156,7 +156,7 @@
       <img src="static/images/katrina_over_time_full.png">
     </figure> 
     <h2 class="subtitle has-text-centered">
-      Data preview: Example time series of the same plant with original texture (top), <br> class annotations (middle), <br> and leaf instances (bottom).
+      Data preview: Example time series of the same plant with original texture (top), <br> class annotations (middle), and leaf instances (bottom).
     </h2>
   </div>
 </section>
@@ -172,8 +172,8 @@
         <div class="content has-text-justified">
           <p>
             This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). <br>
-            3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. <br> A total of 84 point clouds are provided with an average of ... points per scan. 
-            Of these, 12 are labelled with class and instance labels for each point in the clouds.
+            3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. <br> A total of 84 point clouds are provided with an average of over 1.17 million points per scan. 
+            Of these, 13 are annotated with class and instance labels for each point in the cloud.
           </p>
         </div>
         <h3 class="title is-3">Methodology</h3>
@@ -184,7 +184,8 @@
             The scanner operates based on structured-light projections, so while the plants were regularly housed under polytunnels 
             at the University of Lincoln <a href="https://www.lincoln.ac.uk/liat/riseholmecampus/" target="_blank">Riseholme campus farm</a>, the plants were carefully 
             moved into a controlled scanning environment for each data collection. The scanning chamber was set up to provide low and diffuse indirect light, 
-            optimizing conditions for data capture. The scanner was calibrated before each use.
+            optimizing conditions for data capture. The scanner was calibrated before each use. All scans are provided true to real-world scale in the mm unit. <br>
+            Note, however, that each sequence of scans of the same plant were aligned manually using <a href="https://www.cloudcompare.org/" target="_blank">CloudCompare</a>, and thus a common global coordinate frame can not be assumed.
             </p>
         </div>
         <h3 class="title is-3">Data structure and file format</h3>
@@ -192,14 +193,16 @@
           <p>
             We provide each scan as an .xyz text file with up to 8 columns per points (X, Y, Z, R, G, B, class, instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
             Files are named by their plant variety and ID, followed by the capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
+            An added 'a' at the end of the file name indicates that the scan is annotated.<br>
+            The scan <i>zara3_20220715</i> is missing colour information.
             </p>
         </div>
         <h3 class="title is-3">Annotations</h3>
         <div class="content has-text-justified">
           <p>
             Where available, two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class.
-            Please note that the instance labels are not ordered by emergence date of each organ and not fully temporally consistent. 
-            Classes are: 
+            Please note that the instance labels are not ordered by emergence date of each organ and not temporally consistent. 
+            The classes are: 
             <ol>
               <li>leaf or leaflet</li>
               <li>stem (incl. petiole, peduncle, pedicel, and stolon)</li>
@@ -215,11 +218,11 @@
         <h3 class="title is-3">Code and ressources</h3>
         <div class="content has-text-justified">
           <p>
-            We provide a small python code sample <a href="https://github.com/KarolineH/projectpage/blob/master/python/data_io.py" target="_blank">here</a> for loading the data set, optionally using Open3D or Numpy. <br>
+            We provide a small python code sample <a href="https://github.com/KarolineH/projectpage/blob/master/python/data_io.py" target="_blank">here</a> for loading the data set, optionally using Open3D or Numpy.
             We also recommend using <a href="https://www.danielgm.net/cc/" target="_blank">CloudCompare</a> to inspect the data. 
             <figure>
               <img src="static/images/cc_visualise.png" width="500">
-              <figcaption>Make sure to flick through these two drop-down menus in the Properties window to display the labels where available. <br> You can display original colour, class labels, and instance labels.</figcaption>
+              <figcaption>Make sure to flick through these two drop-down menus in the Properties window to display the labels where available. You can display original colour, class labels, and instance labels.</figcaption>
             </figure>
             </p>
         </div>
@@ -237,10 +240,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.<br>
-
-            Note: This website is a living document, and we continuously update it with the latest information related to our research. If you have any questions or feedback, please don't hesitate to contact us.
-            Thank you for your interest in our research!<br>
-
+            It is a living document, and we continuously update it with the latest information. If you have any questions or feedback, please don't hesitate to contact us.
             This work was supported by...
           </p>
 
