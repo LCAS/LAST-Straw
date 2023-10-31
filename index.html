@@ -171,9 +171,10 @@
         <h3 class="title is-3">The data set</h3>
         <div class="content has-text-justified">
           <p>
-            This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). <br>
-            3 plants are of Driscoll's Katrina variety and 3 of Driscoll's Zara variety. <br> A total of 84 point clouds are provided with an average of over 1.17 million points per scan. 
+            This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022). <br> 
+            A total of 84 point clouds are provided with an average of over 1.17 million points per scan. 
             Of these, 13 are annotated with class and instance labels for each point in the cloud.
+            The 6 plants are of two varieties, which we will denote as 'Variety A' and 'Variety B' in order to maintain confidentiality.
           </p>
         </div>
         <h3 class="title is-3">Methodology</h3>
@@ -192,9 +193,9 @@
         <div class="content has-text-justified">
           <p>
             We provide each scan as an .xyz text file with up to 8 columns per points (X, Y, Z, R, G, B, class, instance), providing the 3D coordinates, followed by RGB values, and the class and instance labels where available.
-            Files are named by their plant variety and ID, followed by the capture date in year-month-day format, e.g. katrina2_20220729.xyz <br>
+            Files are named by their plant variety and ID, followed by the capture date in year-month-day format, e.g. A2_20220729.xyz <br>
             An added 'a' at the end of the file name indicates that the scan is annotated.<br>
-            The scan <i>zara3_20220715</i> is missing colour information.
+            The scan <i>B3_20220715</i> is missing colour information.
             </p>
         </div>
         <h3 class="title is-3">Annotations</h3>
@@ -210,8 +211,9 @@
               <li>flower</li>
               <li>crown</li>
               <li>background (incl. soil, grow bags, neighboring plants, and any other objects captured in the background)</li>
-              <li>other (any unidentifiable structure within the plant, which may include newly emerging shoots)</li>
+              <li>other (any unidentifiable structure within the plant, which may include newly emerging organs that are not yet identifyable)</li>
               <li>the scanning table</li>
+              <li>emergent leaf or leaflet</li>
             </ol>
             </p>
         </div>
