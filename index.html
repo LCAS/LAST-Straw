@@ -168,10 +168,10 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">The data set</h3>
+        <h3 class="title is-3">The dataset</h3>
         <div class="content has-text-justified">
           <p>
-            This data set contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022).
+            This dataset contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022).
             A total of 84 point clouds are provided with an average of over 1.17 million points per scan. 
             Of these, 13 are annotated with class and instance labels for each point in the cloud.
             The 6 plants are of two varieties, which we will denote as 'Variety A' and 'Variety B' in order to maintain confidentiality.
@@ -217,17 +217,22 @@
               <li>emergent leaf or leaflet</li>
             </ol>
             </p>
+
+            <p>
+             Ground truth skeletons are provided for all stem-like structures for the annotated scans. Please note that the associated json file should be used to associate their file names with the annotation id of each stem.  
+            </p>
         </div>
-        <h3 class="title is-3">Code and ressources</h3>
+        <h3 class="title is-3">Code and resources</h3>
         <div class="content has-text-justified">
           <p>
-            We provide a small python code sample <a href="https://github.com/LCAS/LAST-Straw/blob/master/python/data_io.py" target="_blank">here</a> for loading the data set, optionally using Open3D or Numpy.
+            We provide a small python code sample <a href="https://github.com/LCAS/LAST-Straw/blob/master/python/data_io.py" target="_blank">here</a> for loading the dataset, optionally using Open3D or Numpy.
             We also recommend using <a href="https://www.danielgm.net/cc/" target="_blank">CloudCompare</a> to inspect the data. 
             <figure>
               <img src="static/images/cc_visualise.png" width="500">
               <figcaption>Make sure to flick through these two drop-down menus in the Properties window to display the labels where available. You can display original colour, class labels, and instance labels.</figcaption>
             </figure>
             </p>
+            
         </div>
       </div>
     </div>
