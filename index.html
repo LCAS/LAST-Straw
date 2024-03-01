@@ -57,11 +57,13 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://karo.super.site/" target="_blank">Karoline Heiwolt</a><sup>*</sup>,</span>
+                <a href="https://staff.lincoln.ac.uk/13ef189a-a2cc-43f0-8cec-fa55b4435cd2" target="_blank">Katherine M.F. James</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="https://staff.lincoln.ac.uk/13ef189a-a2cc-43f0-8cec-fa55b4435cd2" target="_blank">Katherine M.F. James</a><sup>*</sup>,</span>
+                  <a href="https://karo.super.site/" target="_blank">Karoline Heiwolt</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://staff.lincoln.ac.uk/gcielniak" target="_blank">Grzegorz Cielniak</a>
+                    <a href="https://www.niab.com/about/people/professor-dan-sargent" target="_blank">Daniel J. Sargent</a><sup>*</sup>,</span>
+                    <span class="author-block"></span>
+                     <a href="https://staff.lincoln.ac.uk/gcielniak" target="_blank">Grzegorz Cielniak</a>
                   </span>
                   </div>
 
@@ -153,10 +155,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <figure>
-      <img src="static/images/katrina_over_time_full.png">
+      <img src="static/images/katrina_over_time_updated.png">
     </figure> 
     <h2 class="subtitle has-text-centered">
-      Data preview: Example time series of the same plant with original texture (top), <br> class annotations (middle), and leaf instances (bottom).
+      Data preview: Example time series of the same plant with original textures (row 1), <br> class annotations (row 2), instance annotations (row 3), and temporally consistent leaf instance annotations (row 4).
     </h2>
   </div>
 </section>
@@ -172,9 +174,9 @@
         <div class="content has-text-justified">
           <p>
             This dataset contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022).
+            The 6 plants are of two varieties, Driscoll's Katrina (variety A) and Driscoll's Zara (variety B), with three individuals of each.
             A total of 84 point clouds are provided with an average of over 1.17 million points per scan. 
             Of these, 13 are annotated with class and instance labels for each point in the cloud.
-            The 6 plants are of two varieties, which we will denote as 'Variety A' and 'Variety B' in order to maintain confidentiality.
           </p>
         </div>
         <h3 class="title is-3">Methodology</h3>
@@ -187,7 +189,7 @@
             moved into a controlled scanning environment for each data collection. The scanning chamber was set up to provide low and diffuse indirect light, 
             optimizing conditions for data capture. <br>
             The scanner was calibrated before each use. All scans are true to real-world scale (in mm).
-            Each sequence of scans of the same plant were aligned manually using <a href="https://www.cloudcompare.org/" target="_blank">CloudCompare</a>, and thus a common global coordinate frame can not be assumed.
+            Each sequence of scans of the same plant were aligned manually using <a href="https://www.cloudcompare.org/" target="_blank">CloudCompare</a>, and thus a common global coordinate frame between different plants can not be assumed.
             </p>
         </div>
         <h3 class="title is-3">Data structure and file format</h3>
@@ -204,7 +206,8 @@
           <p>
             Where available, two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class.
             Please note that the instance labels are not ordered by emergence date of each organ and not temporally consistent. 
-            The classes are: 
+            We use seven classes to distinguish different plant organs and two additional classes for background information inadvertently captured during the scanning process. 
+            The semantic classes are:
             <ol>
               <li>leaf or leaflet</li>
               <li>stem (incl. petiole, peduncle, pedicel, and stolon)</li>
