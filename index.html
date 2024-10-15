@@ -176,7 +176,7 @@
             This dataset contains point clouds of 6 strawberry plants, each captured 14 times over the span of 11 weeks (13/05/2022 - 29/07/2022).
             The 6 plants are of two varieties, Driscoll's Katrina (variety A) and Driscoll's Zara (variety B), with three individuals of each.
             A total of 84 point clouds are provided with an average of over 1.17 million points per scan. 
-            Of these, 13 are annotated with class and instance labels for each point in the cloud.
+            Of these, 28 are annotated with class and instance labels for each point in the cloud.
           </p>
         </div>
         <h3 class="title is-3">Methodology</h3>
@@ -189,7 +189,7 @@
             moved into a controlled scanning environment for each data collection. The scanning chamber was set up to provide low and diffuse indirect light, 
             optimizing conditions for data capture. <br>
             The scanner was calibrated before each use. All scans are true to real-world scale (in mm).
-            Each sequence of scans of the same plant were aligned manually using <a href="https://www.cloudcompare.org/" target="_blank">CloudCompare</a>, and thus a common global coordinate frame between different plants can not be assumed.
+            Each sequence of scans of the same plant was aligned manually using <a href="https://www.cloudcompare.org/" target="_blank">CloudCompare</a>, and thus a common global coordinate frame between different plants can not be assumed.
             </p>
         </div>
         <h3 class="title is-3">Data structure and file format</h3>
@@ -205,7 +205,7 @@
         <div class="content has-text-justified">
           <p>
             Where available, two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class.
-            Please note that the instance labels are not ordered by emergence date of each organ and not temporally consistent. 
+            Please note that the instance labels are not ordered by the emergence date of each organ and are not temporally consistent. 
             We use seven classes to distinguish different plant organs and two additional classes for background information inadvertently captured during the scanning process. 
             The semantic classes are:
             <ol>
@@ -214,15 +214,49 @@
               <li>berry</li>
               <li>flower</li>
               <li>crown</li>
-              <li>background (incl. soil, grow bags, neighboring plants, and any other objects captured in the background)</li>
-              <li>other (any unidentifiable structure within the plant, which may include newly emerging organs that are not yet identifyable)</li>
+              <li>background (incl. soil, grow bags, neighbouring plants, and any other objects captured in the background)</li>
+              <li>other (any unidentifiable structure within the plant, which may include newly emerging organs that are not yet identifiable)</li>
               <li>the scanning table</li>
               <li>emergent leaf or leaflet</li>
             </ol>
             </p>
 
             <p>
-             Ground truth skeletons are provided for all stem-like structures for the annotated scans. Please note that the associated json file should be used to associate their file names with the annotation id of each stem.  
+             Ground truth skeletons are provided for all stem-like structures for the annotated scans. Please note that the associated json file should be used to associate their file names with the # LAST-Straw: Lincoln’s Annotated Spatio-Temporal Strawberry Dataset 
+
+             A temporal dataset of strawberry plant point clouds at different growth and maturity stages.
+             
+             ## Overview
+             Annotation rich 3D crop data is essential for the development of next generation automated phenotyping and crop monitoring methodology. 
+             This dataset thus provides an invaluable resource for computer vision engineers and researchers. LAST-Straw contains scans of two varieties of strawberries (3 individuals each) taken across a season, capturing plant growth and organ development from young to mature fruiting plant. Annotations provided are at both a semantic and instance level.
+             
+             
+             ## Data collection
+             
+             Point clouds were collected in a controlled environment using a structured light camera (Shining Einscan Pro 2X). The scanner was calibrated before each use. All scans are true to real-world scale (in mm). Each sequence of scans of the same plant were aligned manually using CloudCompare, and thus a common global coordinate frame between different plants can not be assumed.
+             
+             ## Annotations
+             
+             Where available, two labels are provided per point: one class label and one instance label to distinguish individual organ instances of the same class. Please note that the instance labels are not ordered by emergence date of each organ and not temporally consistent. We use seven classes to distinguish different plant organs and two additional classes for background information inadvertently captured during the scanning process. The semantic classes are:
+             
+             1. leaf or leaflet
+             2. stem (incl. petiole, peduncle, pedicel, and stolon)
+             3. berry
+             4. flower
+             5. crown
+             6. background (incl. soil, grow bags, neighboring plants, and any other objects captured in the background)
+             7. other (any unidentifiable structure within the plant, which may include newly emerging organs that are not yet identifiable)
+             8. the scanning table
+             9. emergent leaf or leaflet
+             
+             ## Preview and usage
+             
+             You can preview a sample of the LAST-Straw dataset on Segments.ai: [TO DO]
+             
+             To access the full dataset as well as bonus material (supporting code, stem skeletons), please see the website: https://lcas.github.io/LAST-Straw/
+             
+             
+             id of each stem.  
             </p>
         </div>
         <h3 class="title is-3">Code and resources</h3>
